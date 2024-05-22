@@ -1,0 +1,464 @@
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.crimson-pro {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-style: bold;
+  }
+  
+.karla {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+body {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+   
+}
+
+.theme-spring {
+    
+    background-image: url("bg-spring.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .book-card {
+        background-color: rgba(246, 196, 215, 0.8);
+    }
+
+    h1 {
+        color: rgb(117, 84, 199);
+    }
+
+    h2 {
+        color: #d9498a;
+    }
+
+    h3, p {
+        color: #282828;
+    }
+
+    button {
+        background-color: #ffffff;
+        color: #d9498a;
+    }
+
+    #profile-link {
+       
+        border: solid 2px #d9498a;
+        color: #d9498a;
+    }
+}
+
+.theme-summer {
+    background-image: url("bg-summer.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right middle;
+
+    .book-card {
+        background-color: rgba(251, 208, 127, 0.757);
+    }
+
+    h1 {
+        color: #3f4f2e;
+    }
+
+    h2 {
+        color: #17a0b2;
+    }
+
+    h3, p {
+        color: #282828;
+    }
+
+    button {
+        background-color: #ffffff;
+        color: #17a0b2;
+    }
+
+    #profile-link {
+        background-color: rgba(251, 208, 127, 0.757);
+        color: #17a0b2;
+    }
+}
+
+.theme-autumn {
+    background-image: url("bg-autumn.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+
+    .book-card {
+        background-color: rgba(177, 172, 129, 0.757);
+    }
+
+    h1 {
+        color: #a44903;
+    }
+
+    h2 {
+        color: #573515;
+    }
+
+    h3, p {
+        color: #282828;
+    }
+
+    button {
+        background-color: #ffffff;
+        color: #44260a;
+    }
+
+    #profile-link {
+        background-color: rgba(177, 172, 129, 0.757);
+        color: #44260a;
+    }
+}
+
+.theme-winter {
+    background-image: url("bg-winter.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+
+    .book-card {
+        background-color: rgba(202, 210, 233, 0.757);
+    }
+
+    h1 {
+        color: #801d1b;
+    }
+
+    h2 {
+        color: #3c6445;
+    }
+
+    h3, p {
+        color: #282828;
+    }
+
+    button {
+        background-color: #ffffff;
+        color: #3c6445;
+    }
+
+    #profile-link {
+        background-color: rgba(202, 210, 233, 0.757);
+        color:#3c6445;
+    }
+}
+
+#main-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-container.hidden {
+    display: none;
+}
+
+#save-btn.hidden {
+    display: none;
+}
+
+#header { 
+    padding: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    h1 {
+        font-family: "Poiret One";
+        font-size: 200px;
+        margin: 100px 400px;
+        
+    }
+
+    #loggedIn-container {
+        font-family: "Crimson Pro";
+        margin: 10px 0px 0px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-self: flex-end;
+
+        h2 {
+            font-size: 40px;
+            margin: 10px 10px 10px 20px;
+            display: flex;
+            align-self: center;
+        }
+
+        #button-container {
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            button {
+                font-size: 20px;
+                font-family: "Crimson Pro";
+                border: none;
+                padding: 5px 10px;
+                margin: 10px;
+                border-radius: 10%;
+            }
+
+            #profile-link, #home-btn, #log-out-btn {
+                padding: 15px 15px;
+                font-size: 30px;
+                font-family: "Crimson Pro";
+
+                img {
+                    border-radius: 10px;
+                }
+
+                i {
+                    margin: 10px 5px 5px 5px;
+                    font-size: 20px;
+                }
+            }
+
+        }
+
+        
+    }
+
+    #loggedIn-container.hidden {
+        display: none;
+    }
+
+}
+
+#login-container {
+    
+    padding: 20px;
+    margin: 10px;
+    border: solid #303030 1px;
+    color:#282828;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    #login-container.hidden {
+        display: none;
+    }
+
+    button {
+        font-family: "Crimson Pro";
+        font-size: 18px;
+        border: none;
+        padding: 5px 10px;
+        margin: 10px;
+        border-radius: 10%;
+    }
+
+    input {
+        font-family: "Karla";
+        font-size: 18px;
+        padding: 5px 10px;
+        margin: 5px; 
+    }
+
+    h3 {
+        font-family: "Crimson Pro";
+        margin: 5px 25px;
+    }
+}
+
+
+#content-container {
+    
+    border-radius: 5%;
+    padding: 10px 20px 40px 20px;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h2 {
+        margin: 50px 0 30px 0;
+        font-size: 35px;
+        font-family: "Crimson Pro";
+    }
+    
+    .book-container {
+       
+        margin: 40px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+
+        .book-card {
+            border: solid #303030 1px;
+            border-radius: 10px;
+            min-width: 300px;
+            margin: 30px;
+            padding: 10px 10px 20px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+    
+            img {
+                height: 450px;
+                margin: 15px;
+                padding: 20px 20px 10px 20px;
+                align-self: center;
+            
+            }
+
+            h3{
+                margin: 10px 20px;
+                font-size: 28px;
+                font-family: "Crimson Pro";
+            }
+
+            p {
+                margin: 10px 20px;
+                font-size: 20px;
+                font-family: "Crimson Pro";
+            }
+
+            #save-btn, .save-btn, .un-save-btn {
+                font-family: "Crimson Pro";
+                border: none;
+                border-radius: 20px;
+                padding: 10px 15px;
+                margin: 5px 20px;
+                font-size: 20px;
+                align-self: flex-end;
+            }
+
+
+        }
+
+    }
+    
+
+}
+
+
+#content-container.profile-page {
+    
+    border-radius: 5%;
+    padding: 40px 20px;
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    h2 {
+        margin: 50px 0 30px 0;
+        font-size: 35px;
+        font-family: "Crimson Pro";
+    }
+
+    #sorting-container {
+        display: flex;
+        align-items: center;
+
+        select {
+            font-family: "Karla";
+            font-size: 18px;
+            padding: 5px 10px;
+            margin: 5px;
+            border:solid 1px #282828;
+            color: #282828;
+            border-radius: 5px;
+        }
+
+       #show-sorting-btn {
+            font-size: 20px;
+            font-family: "Crimson Pro";
+            border: none;
+            padding: 5px 10px;
+            margin: 10px;
+            border-radius: 10%;
+        }
+    }
+    
+    .book-container {
+       
+        margin: 40px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+
+        .book-card {
+            border: solid #303030 1px;
+            border-radius: 10px;
+            min-width: 300px;
+            margin: 30px;
+            padding: 10px 10px 20px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+    
+            img {
+                height: 450px;
+                margin: 15px;
+                padding: 20px 20px 10px 20px;
+                align-self: center;
+            
+            }
+
+            h3{
+                margin: 10px 20px;
+                font-size: 28px;
+                font-family: "Crimson Pro";
+            }
+
+            p {
+                margin: 10px 20px;
+                font-size: 20px;
+                font-family: "Crimson Pro";
+            }
+
+            #save-btn, .save-btn, .un-save-btn {
+                font-family: "Crimson Pro";
+                border: none;
+                border-radius: 20px;
+                padding: 10px 15px;
+                margin: 5px 20px;
+                font-size: 20px;
+                align-self: flex-end;
+            }
+
+        }
+
+    }
+    
+
+}

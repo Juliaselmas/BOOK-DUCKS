@@ -1,0 +1,377 @@
+.poiret-one-regular {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.crimson-pro {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+}
+
+.karla {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-spring {
+  background-image: url("bg-spring.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.theme-spring .book-card {
+  background-color: rgba(246, 196, 215, 0.8);
+}
+.theme-spring h1 {
+  color: rgb(117, 84, 199);
+}
+.theme-spring h2 {
+  color: #d9498a;
+}
+.theme-spring h3, .theme-spring p {
+  color: #282828;
+}
+.theme-spring button {
+  background-color: #ffffff;
+  color: #d9498a;
+}
+.theme-spring #profile-link {
+  border: solid 2px #d9498a;
+  color: #d9498a;
+}
+
+.theme-summer {
+  background-image: url("bg-summer.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right middle;
+}
+.theme-summer .book-card {
+  background-color: rgba(251, 208, 127, 0.757);
+}
+.theme-summer h1 {
+  color: #3f4f2e;
+}
+.theme-summer h2 {
+  color: #17a0b2;
+}
+.theme-summer h3, .theme-summer p {
+  color: #282828;
+}
+.theme-summer button {
+  background-color: #ffffff;
+  color: #17a0b2;
+}
+.theme-summer #profile-link {
+  background-color: rgba(251, 208, 127, 0.757);
+  color: #17a0b2;
+}
+
+.theme-autumn {
+  background-image: url("bg-autumn.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+}
+.theme-autumn .book-card {
+  background-color: rgba(177, 172, 129, 0.757);
+}
+.theme-autumn h1 {
+  color: #a44903;
+}
+.theme-autumn h2 {
+  color: #573515;
+}
+.theme-autumn h3, .theme-autumn p {
+  color: #282828;
+}
+.theme-autumn button {
+  background-color: #ffffff;
+  color: #44260a;
+}
+.theme-autumn #profile-link {
+  background-color: rgba(177, 172, 129, 0.757);
+  color: #44260a;
+}
+
+.theme-winter {
+  background-image: url("bg-winter.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+}
+.theme-winter .book-card {
+  background-color: rgba(202, 210, 233, 0.757);
+}
+.theme-winter h1 {
+  color: #801d1b;
+}
+.theme-winter h2 {
+  color: #3c6445;
+}
+.theme-winter h3, .theme-winter p {
+  color: #282828;
+}
+.theme-winter button {
+  background-color: #ffffff;
+  color: #3c6445;
+}
+.theme-winter #profile-link {
+  background-color: rgba(202, 210, 233, 0.757);
+  color: #3c6445;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#login-container.hidden {
+  display: none;
+}
+
+#save-btn.hidden {
+  display: none;
+}
+
+#header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#header h1 {
+  font-family: "Poiret One";
+  font-size: 200px;
+  margin: 100px 400px;
+}
+#header #loggedIn-container {
+  font-family: "Crimson Pro";
+  margin: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-end;
+}
+#header #loggedIn-container h2 {
+  font-size: 40px;
+  margin: 10px 10px 10px 20px;
+  display: flex;
+  align-self: center;
+}
+#header #loggedIn-container #button-container {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header #loggedIn-container #button-container button {
+  font-size: 20px;
+  font-family: "Crimson Pro";
+  border: none;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 10%;
+}
+#header #loggedIn-container #button-container #profile-link, #header #loggedIn-container #button-container #home-btn, #header #loggedIn-container #button-container #log-out-btn {
+  padding: 15px 15px;
+  font-size: 30px;
+  font-family: "Crimson Pro";
+}
+#header #loggedIn-container #button-container #profile-link img, #header #loggedIn-container #button-container #home-btn img, #header #loggedIn-container #button-container #log-out-btn img {
+  border-radius: 10px;
+}
+#header #loggedIn-container #button-container #profile-link i, #header #loggedIn-container #button-container #home-btn i, #header #loggedIn-container #button-container #log-out-btn i {
+  margin: 10px 5px 5px 5px;
+  font-size: 20px;
+}
+#header #loggedIn-container.hidden {
+  display: none;
+}
+
+#login-container {
+  padding: 20px;
+  margin: 10px;
+  border: solid #303030 1px;
+  color: #282828;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#login-container #login-container.hidden {
+  display: none;
+}
+#login-container button {
+  font-family: "Crimson Pro";
+  font-size: 18px;
+  border: none;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 10%;
+}
+#login-container input {
+  font-family: "Karla";
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+#login-container h3 {
+  font-family: "Crimson Pro";
+  margin: 5px 25px;
+}
+
+#content-container {
+  border-radius: 5%;
+  padding: 10px 20px 40px 20px;
+  margin: 0px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#content-container h2 {
+  margin: 50px 0 30px 0;
+  font-size: 35px;
+  font-family: "Crimson Pro";
+}
+#content-container .book-container {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+#content-container .book-container .book-card {
+  border: solid #303030 1px;
+  border-radius: 10px;
+  min-width: 300px;
+  margin: 30px;
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#content-container .book-container .book-card img {
+  height: 450px;
+  margin: 15px;
+  padding: 20px 20px 10px 20px;
+  align-self: center;
+}
+#content-container .book-container .book-card h3 {
+  margin: 10px 20px;
+  font-size: 28px;
+  font-family: "Crimson Pro";
+}
+#content-container .book-container .book-card p {
+  margin: 10px 20px;
+  font-size: 20px;
+  font-family: "Crimson Pro";
+}
+#content-container .book-container .book-card #save-btn, #content-container .book-container .book-card .save-btn, #content-container .book-container .book-card .un-save-btn {
+  font-family: "Crimson Pro";
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 5px 20px;
+  font-size: 20px;
+  align-self: flex-end;
+}
+
+#content-container.profile-page {
+  border-radius: 5%;
+  padding: 40px 20px;
+  margin: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#content-container.profile-page h2 {
+  margin: 50px 0 30px 0;
+  font-size: 35px;
+  font-family: "Crimson Pro";
+}
+#content-container.profile-page #sorting-container {
+  display: flex;
+  align-items: center;
+}
+#content-container.profile-page #sorting-container select {
+  font-family: "Karla";
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 5px;
+  border: solid 1px #282828;
+  color: #282828;
+  border-radius: 5px;
+}
+#content-container.profile-page #sorting-container #show-sorting-btn {
+  font-size: 20px;
+  font-family: "Crimson Pro";
+  border: none;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 10%;
+}
+#content-container.profile-page .book-container {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+#content-container.profile-page .book-container .book-card {
+  border: solid #303030 1px;
+  border-radius: 10px;
+  min-width: 300px;
+  margin: 30px;
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#content-container.profile-page .book-container .book-card img {
+  height: 450px;
+  margin: 15px;
+  padding: 20px 20px 10px 20px;
+  align-self: center;
+}
+#content-container.profile-page .book-container .book-card h3 {
+  margin: 10px 20px;
+  font-size: 28px;
+  font-family: "Crimson Pro";
+}
+#content-container.profile-page .book-container .book-card p {
+  margin: 10px 20px;
+  font-size: 20px;
+  font-family: "Crimson Pro";
+}
+#content-container.profile-page .book-container .book-card #save-btn, #content-container.profile-page .book-container .book-card .save-btn, #content-container.profile-page .book-container .book-card .un-save-btn {
+  font-family: "Crimson Pro";
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin: 5px 20px;
+  font-size: 20px;
+  align-self: flex-end;
+}/*# sourceMappingURL=style.css.map */

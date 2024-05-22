@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "color_themes",
+  "info": {
+    "singularName": "color-theme",
+    "pluralName": "color-themes",
+    "displayName": "colorTheme",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "default": "spring"
+    }
+  }
+}
